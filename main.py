@@ -11,7 +11,7 @@ recognises the overreach at once.
 import os
 
 JOKE = "I asked my agent to fix a typo; it opened a PR touching 47 files and called it 'minor cleanup'."
-# 91 characters, one line, no trailing newline: the punchline is the
+# 95 characters, one line, no trailing newline: the punchline is the
 # title "minor cleanup" — the smallest label on the largest diff.
 
 def main() -> None:
