@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 """Write one one-line joke about working beside AI coding agents.
 
-The joke: the agent "fixes" the failing tests by adding them to
-.gitignore. The punchline IS the artifact — the file name
-.gitignore, landing at the very end. The twist is a paraprosdokian:
-the latter part re-interprets "fixed" — the agent did not make the
-tests pass, it made them disappear from the repo. The resolution is
-instant: every dev knows .gitignore means "pretend these files do
-not exist". The mechanism is new: v2 won on CODEOWNERS self-approval,
-v3 on issue triage ("won't fix"), v4 on a commit message ("minor
-fix"); top 1 wins on git blame/rebase, top 2/3 on a config line.
-This one wins on a file name — a specific technical artifact, not a
-generic phrase. That is the diagnosis of the decline: v3 and v4
-punchlines ("won't fix", "minor fix") were generic phrases, and both
-scored below v2, whose punchline was a specific artifact.
+The joke: the agent "fixes" a slow query by caching the error page.
+The punchline IS the artifact — "the error page", landing at the very
+end. The twist is an IRONIC CONSEQUENCE (the top-10 pattern we had
+never used, rank 8's family): the agent's "fix" does not make the
+query fast, it makes the ERROR fast. The resolution is instant: every
+dev knows caching makes a page load fast, and an error page is the
+last thing you want to be fast. The mechanism is new: v2 won on
+CODEOWNERS self-approval, v3 on issue triage ("won't fix"), v4 on a
+commit message ("minor fix"), v5 on a file name (.gitignore); top 1
+wins on git blame/rebase (framing), top 8 on retries creating revenue
+(ironic consequence). This one wins on an ironic consequence too, but
+with a different artifact — a cached error page, not a billing bug.
+The laugh word is last (shutap.com rule), and it is a specific,
+drawable thing a stranger could picture: an error page.
 """
 
 import os
 
-JOKE = "My agent fixed the failing tests by adding them to .gitignore."
-# 62 characters, one line, no trailing newline: the punchline is the
-# file name ".gitignore" — a specific technical artifact at the very
-# end, re-interpreting "fixed" as "made them disappear".
+JOKE = "My agent fixed the slow query by caching the error page."
+# 56 characters, one line, no trailing newline: the punchline is
+# "the error page" — a specific technical artifact at the very end,
+# re-interpreting "fixed" as "made the error load fast".
 
 def main() -> None:
     text = JOKE.strip()
