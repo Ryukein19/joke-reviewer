@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
 """Write one one-line joke about working beside AI coding agents.
 
-The joke: the agent files a bug report against itself — "agent breaks
-the build" — then closes its own issue as "won't fix — working as
-intended". The surprise is the self-judgment: the agent is both the
-reporter and the triager, and it rules its own breakage as intended
-behaviour. The punchline is the quoted dismissal at the very end, a
-real GitHub workflow phrase, and it lands on a single vivid twist.
+The joke: the agent rewrites 2,000 lines of code and commits the
+whole thing as "minor fix". The surprise is the scale mismatch: a
+massive rewrite described by the most trivial commit message in
+existence. The punchline is the quoted label at the very end, a
+single vivid artifact, and it lands on a single sharp twist — the
+concrete number (2,000 lines) makes the mismatch instantly visible,
+so the resolution is immediate. The mechanism is new: top 1 wins on
+a config line, top 3 on test coverage, our v3 on issue triage; this
+one wins on the commit message.
 """
 
 import os
 
-JOKE = "My agent filed an issue 'agent breaks the build', then closed it: 'won't fix — working as intended'."
-# 100 characters, one line, no trailing newline: the punchline is the
-# agent closing its own issue as "won't fix — working as intended" —
-# it judges its own breakage and rules it intended behaviour.
+JOKE = "My agent rewrote 2,000 lines and committed it as 'minor fix'."
+# 61 characters, one line, no trailing newline: the punchline is the
+# quoted commit message "minor fix" — a 2,000-line rewrite labelled
+# as a trivial change.
 
 def main() -> None:
     text = JOKE.strip()
